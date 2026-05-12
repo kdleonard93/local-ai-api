@@ -60,7 +60,7 @@
 
         for (const line of lines) {
           if (line.startsWith('data: ')) {
-            const content = line.replace('data: ', '').trim();
+            const content = line.slice(6); // preserve spaces — 'data: '.length === 6
             
             if (content === '[DONE]') {
               isStreaming = false;
