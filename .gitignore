@@ -9,6 +9,9 @@ __pycache__/
 
 # Environment variables
 .env
+.env.*
+!.env.test
+.env.staging
 
 # macOS
 .DS_Store
